@@ -1,0 +1,28 @@
+{
+  "name": "burger-lounge",
+  "version": "1.0.0",
+  "description": "burger devouring app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highwolfx/burger-lounge.git"
+  },
+  "keywords": [
+    "burger",
+    "tracker"
+  ],
+  "author": "Sean Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/highwolfx/burger-lounge/issues"
+  },
+  "homepage": "https://github.com/highwolfx/burger-lounge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
