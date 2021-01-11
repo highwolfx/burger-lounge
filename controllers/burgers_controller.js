@@ -14,13 +14,13 @@ router.get('/', (req,res) {
     });
 });
 
-router.post('/api/cats', (req,res)=>{
+router.post('/api/burgers', (req,res)=>{
     burger.add(req.body.burger_name, (result) => {
         res.json({id: result.insertID});
     });
 });
 
-router.put('/api/cats/:id', (req,res)=> {
+router.put('/api/burgers/:id', (req,res)=> {
     var devoured = "id = " + req.params.id;
     console.log('devoured', devoured);
 
