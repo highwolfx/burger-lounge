@@ -10,10 +10,12 @@
   {{/each}}    
 </ul>
 
+<h2>Burgers already eaten</h2>
+
 <ul>
-  {{#each burger_name}}
+  {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
+      {{> burgers/burger-block-2 devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
