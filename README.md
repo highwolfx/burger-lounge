@@ -39,7 +39,7 @@ At the bottom, you may add burgers to be devoured by typing its name in the form
 Each "DEVOUR" button once clicked will move a burger from the "to be eaten" list to the "already eaten" list.
 
 <p align="center">
-    <img alt="GIF of GUI" src="https://raw.githubusercontent.com/highwolfx/burger-lounge/main/public/assets/main.gif">
+    <img alt="GIF of GUI" src="https://raw.githubusercontent.com/highwolfx/burger-lounge/main/public/assets/GUI.gif">
 </p>
 
 ## License
