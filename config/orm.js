@@ -1,4 +1,3 @@
-const { connect } = require("./connection.js");
 var connection = require("./connection.js");
 
 var orm = {
@@ -19,10 +18,8 @@ var orm = {
     updateOne: function(burgerID,cb){
         var queryString = "UPDATE burgers SET devoured=true WHERE id=?";
         connection.query(queryString, [burgerID], (err, result) => {
-            connection.query(queryString, [addBurger, false], (err, result) => {
-                if (err) throw err;
-                cb(result);
-            });
+            if (err) throw err;
+            cb(result);
         });
     }
 };
