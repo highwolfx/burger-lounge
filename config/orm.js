@@ -9,8 +9,10 @@ var orm = {
         });
     },
     add: function(addBurger,cb){
-        var queryString = "INSERT INTO burgers VALUES ?";
-        connection.query(queryString, [addBurger, false], (err, result) => {
+        console.log("Test Here")
+        var queryString = `INSERT INTO burgers(burger_name,devoured) VALUES ("${addBurger}",false);`;
+        console.log("Query: " + queryString);
+        connection.query(queryString, [addBurger.toString()], (err, result) => {
             if (err) throw err;
             cb(result);
         });

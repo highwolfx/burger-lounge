@@ -9,13 +9,12 @@ router.get('/', (req,res) => {
         var burgerObject = {
             burgers: data
         };
-        console.log(burgerObject);
         res.render('index', burgerObject);
     });
 });
 
 router.post('/api/burgers', (req,res)=>{
-    burger.add(req.body.burger_name, (result) => {
+    burger.add(req.body.name, (result) => {
         res.json({id: result.burgerID});
     });
 });
