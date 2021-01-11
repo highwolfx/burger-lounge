@@ -4,10 +4,10 @@ var router = express.Router();
 
 var burger = require('../models/burgers.js');
 
-router.get('/', (req,res) {
-    burger.select((data){
+router.get('/', (req,res) => {
+    burger.all((data) => {
         var burgerObject = {
-            burger_name: data
+            burgers: data
         };
         console.log(burgerObject);
         res.render('index', burgerObject);
@@ -16,7 +16,7 @@ router.get('/', (req,res) {
 
 router.post('/api/burgers', (req,res)=>{
     burger.add(req.body.burger_name, (result) => {
-        res.json({id: result.insertID});
+        res.json({id: result.burgerID});
     });
 });
 
