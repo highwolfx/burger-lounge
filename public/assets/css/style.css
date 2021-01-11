@@ -1,0 +1,35 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #ffc171;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.jumbotron {
+  padding-bottom: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+h1{
+  padding-top: 1rem;
+}
+
+h2{
+  text-align: center;
+}
